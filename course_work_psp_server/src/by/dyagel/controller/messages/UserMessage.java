@@ -1,0 +1,24 @@
+package by.dyagel.controller.messages;
+
+public enum UserMessage {
+    SIGN_IN,
+    SIGN_UP,
+    GET_USERS,
+    DELETE_USER,
+    UPDATE_USER,
+    GET_SERVICES,
+    DELETE_SERVICE,
+    ADD_SERVICE,
+    UPDATE_SERVICE,
+    GET_SPECIALISTS,
+    DELETE_SPECIALIST,
+    ADD_SPECIALIST,
+    UPDATE_SPECIALIST,
+    GET_SEANCES,
+    DELETE_SEANCE,
+    ADD_SEANCE,
+    FIND_AVAILABLE_SEANCES_OF_SPECIALIST,
+    ADD_ORDER,
+    GET_ORDERS,
+    DELETE_ORDER
+}

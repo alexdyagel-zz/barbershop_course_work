@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="1250.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.dyagel.controller.ManageOrdersController">
+    <children>
+        <AnchorPane layoutY="97.0" prefHeight="567.0" prefWidth="1250.0" style="-fx-background-color: #FAFAFA;">
+            <children>
+                <Label layoutX="560.0" prefHeight="53.0" prefWidth="105.0" text="Записи" textFill="#616161">
+                    <font>
+                        <Font name="XXIICentarRegular" size="30.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="orderTable" layoutX="23.0" layoutY="53.0" prefHeight="377.0" prefWidth="1204.0">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="33.0" text="№" />
+                        <TableColumn fx:id="serviceColumn" prefWidth="253.0" text="Услуга" />
+                        <TableColumn fx:id="specialistColumn" minWidth="0.0" prefWidth="230.0" text="Мастер" />
+                        <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="109.0" text="Дата" />
+                        <TableColumn fx:id="timeColumn" minWidth="0.0" prefWidth="97.0" text="Время" />
+                        <TableColumn fx:id="clientColumn" minWidth="0.0" prefWidth="487.0" text="Клиент">
+                            <columns>
+                                <TableColumn fx:id="nameColumn" minWidth="0.0" prefWidth="226.0" text="Имя" />
+                                <TableColumn fx:id="EmailColumn" minWidth="0.0" prefWidth="132.0" text="Почта" />
+                                <TableColumn fx:id="phoneNumberColumn" minWidth="0.0" prefWidth="124.0" text="Телефон" />
+                            </columns>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <Button fx:id="deleteButton" layoutX="281.0" layoutY="445.0" mnemonicParsing="false" onAction="#onPressDeleteButton" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #2E3348;" text="Удалить" textFill="WHITE" />
+            <Button fx:id="statisticsButton" layoutX="1055.0" layoutY="458.0" mnemonicParsing="false" onAction="#onPressStatisticsButton" prefHeight="34.0" prefWidth="159.0" style="-fx-background-color: #2E3348;" text="Статистика услуг" textFill="WHITE" />
+            <TextField fx:id="serviceTextField" layoutX="39.0" layoutY="445.0" prefHeight="25.0" prefWidth="203.0" promptText="Услуга" />
+            <TextField fx:id="specialistTextField" layoutX="39.0" layoutY="482.0" prefHeight="25.0" prefWidth="203.0" promptText="Мастер" />
+            <TextField fx:id="clientTextField" layoutX="39.0" layoutY="517.0" prefHeight="25.0" prefWidth="203.0" promptText="Клиент" />
+            <Button fx:id="searchButton" layoutX="281.0" layoutY="483.0" mnemonicParsing="false" onAction="#onPressSearchButton" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #2E3348;" text="Поиск" textFill="WHITE" />
+            <Button fx:id="refreshButton" layoutX="281.0" layoutY="517.0" mnemonicParsing="false" onAction="#onPressRefreshButton" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #2E3348;" text="Обновить" textFill="WHITE" />
+            <Button fx:id="statisticsSpecialistsButton" layoutX="1055.0" layoutY="505.0" mnemonicParsing="false" onAction="#onPressStatisticsSpecialistsButton" prefHeight="34.0" prefWidth="159.0" style="-fx-background-color: #2E3348;" text="Статистика специалистов" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="493.0" layoutY="35.0" prefHeight="53.0" prefWidth="299.0" text="AnStudio" textFill="#f6f8ed">
+            <font>
+                <Font name="Lobster" size="37.0" />
+            </font>
+        </Label>
+        <Button fx:id="backButton" layoutX="33.0" layoutY="49.0" mnemonicParsing="false" onAction="#onPressBackButton" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #F39C63;" text="Назад" textFill="WHITE" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0"
+            prefWidth="564.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/9.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.dyagel.controller.ManageAccountController">
+    <children>
+        <AnchorPane layoutY="114.0" prefHeight="380.0" prefWidth="564.0" style="-fx-background-color: #FAFAFA;">
+            <children>
+                <TextField fx:id="FIOField" layoutX="185.0" layoutY="38.0" prefHeight="25.0" prefWidth="300.0"/>
+                <TextField fx:id="phoneNumberField" layoutX="185.0" layoutY="89.0" prefHeight="25.0" prefWidth="300.0"/>
+                <TextField fx:id="EmailField" layoutX="185.0" layoutY="142.0" prefHeight="25.0" prefWidth="300.0"/>
+                <Text layoutX="34.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО "
+                      wrappingWidth="46.13671875">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="32.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер телефона"
+                      wrappingWidth="138.13671875">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="32.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email"
+                      wrappingWidth="68.13671875">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="29.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль"
+                      wrappingWidth="102.13671875">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="29.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повторите пароль"
+                      wrappingWidth="123.13671875">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Text>
+                <Button fx:id="saveButton" layoutX="224.0" layoutY="323.0" mnemonicParsing="false"
+                        onAction="#onPressSaveButton" prefHeight="37.0" prefWidth="138.0"
+                        style="-fx-background-color: #2E3348;" text="Сохранить" textFill="WHITE">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Button>
+                <Label fx:id="errorText" alignment="CENTER" layoutX="86.0" layoutY="270.0" prefHeight="53.0"
+                       prefWidth="392.0" textAlignment="CENTER" textFill="#ee0808" visible="false" wrapText="true"/>
+                <PasswordField fx:id="passwordField" layoutX="185.0" layoutY="193.0" prefHeight="25.0"
+                               prefWidth="300.0"/>
+                <PasswordField fx:id="passwordField1" layoutX="185.0" layoutY="241.0" prefHeight="25.0"
+                               prefWidth="300.0"/>
+            </children>
+        </AnchorPane>
+        <Label layoutX="322.0" layoutY="61.0"/>
+        <Label layoutX="170.0" layoutY="35.0" prefHeight="53.0" prefWidth="260.0" text="AnStudio"
+               textFill="#f6f8ed">
+            <font>
+                <Font name="Lobster" size="37.0"/>
+            </font>
+        </Label>
+        <Button fx:id="backButton" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#onPressBackButton"
+                prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #F39C63;" text="Назад"
+                textFill="WHITE"/>
+    </children>
+</AnchorPane>
